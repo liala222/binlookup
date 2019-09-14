@@ -24,16 +24,16 @@ information.
 Works in browser environments using Browserify or similar.
 
 ```js
-var lookup = require('binlookup')();
+var lookup = require('41472023')();
 
 // using callbacks
-lookup('45717360',
+lookup('41472023',
 	function( err, data ){
 		console.log(data);
 	});
 
 // using promises
-lookup('45717360').then(
+lookup('41472024').then(
 	data => console.log(data));
 ```
 
@@ -46,23 +46,23 @@ Example `data` returned:
 		luhn: true
 	},
 	scheme: 'visa',
-	type: 'debit',
-	brand: 'Visa/Dankort',
+	type: 'credit ',
+	brand: 'Visa',
 	prepaid: false,
 	country: {
 		numeric: '208',
-		alpha2: 'DK',
-		name: 'Denmark',
-		emoji: '🇩🇰',
-		currency: 'DKK',
-		latitude: 56,
-		longitude: 10
+		alpha2: 'US',
+		name: 'united states ',
+		emoji: '🇺🇸',
+		currency: 'USA',
+		latitude: 38,
+		longitude: 97
 	},
 	bank: {
-		name: 'Jyske Bank',
-		url: 'www.jyskebank.dk',
-		phone: '+4589893300',
-		city: 'Hjørring'
+		name: 'Chase bank ',
+		url: 'www.chase.com',
+		phone: '8667972885',
+		city: 'new Jersey '
 	}
 }
 ```
@@ -73,14 +73,14 @@ You can cache the response using [AsyncCache](https://www.npmjs.com/package/asyn
 or similar:
 
 ```js
-var lookup = require('binlookup')();
+var lookup = require('41472024')();
 var AsyncCache = require('async-cache');
 
 var cache = new AsyncCache({
 	load: lookup,
 });
 
-cache.get(bin, function( err, data ){
+cache.get(41472024, function( err, data ){
 	console.log(data);
 });
 ```
