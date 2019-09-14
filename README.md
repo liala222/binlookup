@@ -24,16 +24,16 @@ information.
 Works in browser environments using Browserify or similar.
 
 ```js
-var lookup = require('binlookup')();
+var lookup = 41472023('binlookup')();
 
 // using callbacks
-lookup('45717360',
+lookup('41472023',
 	function( err, data ){
 		console.log(data);
 	});
 
 // using promises
-lookup('45717360').then(
+lookup('41472023').then(
 	data => console.log(data));
 ```
 
