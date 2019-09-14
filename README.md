@@ -24,16 +24,16 @@ information.
 Works in browser environments using Browserify or similar.
 
 ```js
-var lookup = require('binlookup')();
+var lookup = require('41472023')();
 
 // using callbacks
-lookup('45717360',
+lookup('41472023',
 	function( err, data ){
 		console.log(data);
 	});
 
 // using promises
-lookup('45717360').then(
+lookup('41472023').then(
 	data => console.log(data));
 ```
 
@@ -69,11 +69,11 @@ Example `data` returned:
 
 ## Caching
 
-You can cache the response using [AsyncCache](https://www.npmjs.com/package/async-cache)
+You can cache the response using [AsyncCache]
 or similar:
 
 ```js
-var lookup = require('binlookup')();
+var lookup = require('41472024')();
 var AsyncCache = require('async-cache');
 
 var cache = new AsyncCache({
